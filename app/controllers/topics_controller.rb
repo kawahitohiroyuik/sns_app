@@ -1,5 +1,5 @@
 class TopicsController < ApplicationController
-   def new
+  def new
     render :new
   end
 
