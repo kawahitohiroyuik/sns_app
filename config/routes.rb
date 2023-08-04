@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   
   # TopicsController
   # "topics/new" へのアクセスを "topics#new" アクションに割り当てます
-  get 'topics/new', to: 'topics#new'
+  get 'topics/new', to: 'topics#new', as: 'new_topic'
   # "topics/edit" へのアクセスを "topics#edit" アクションに割り当てます
-  get 'topics/edit', to: 'topics#edit'
+  get 'topics/edit', to: 'topics#edit', as: 'new_topic'
 end
