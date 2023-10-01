@@ -1,3 +1,20 @@
 <div>
-  <h1>トピック投稿画面</h1>
+  <h1>スレッド新規登録</h1>
 </div>
+
+<%= form_with(model: @topic, url: creat_topic_path, local: true, method: :post) do |f| %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :body %>
+    <%= f.text_area :body, class: 'form-control' %>
+  </div>
+
+  <div class="button-group">
+    <%= f.submit '投稿する', class: 'btn btn-primary' %>
+  </div>
+<% end %>
+

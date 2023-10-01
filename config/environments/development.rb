@@ -36,6 +36,9 @@ Rails.application.configure do
 
     config.cache_store = :null_store
   end
+  
+  #追記
+  config.action_mailer.default_url_options = { host: 'localhost', port: 8081 }
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local

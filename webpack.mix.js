@@ -10,8 +10,12 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+ 
+ 
 
 mix.setPublicPath('public')
     .sass('app/assets/stylesheets/sass/app.scss', 'public/css/app.css')
     .js('app/javascript/app.js', 'public/js/app.js')
-    .js('app/javascript/bootstrap.js', 'public/js/bootstrap.js');
+    .js('app/javascript/bootstrap.js', 'public/js/bootstrap.js')
+    // この行を追加します
+    .js('app/javascript/turbo.js', 'public/js/turbo.js');
